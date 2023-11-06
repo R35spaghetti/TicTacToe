@@ -1,0 +1,49 @@
+.gameBoard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+}
+
+.square {
+    width: 32vw;
+    height: 30vh;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+
+
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blink {
+    font-size: 900px;
+    animation: blink 1s linear infinite;
+}
+
+.blink2 {
+    font-size: 300px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinkText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+}
